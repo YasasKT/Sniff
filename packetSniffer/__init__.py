@@ -5,5 +5,5 @@ __version__ = '1.0'
 __author__ = 'Yasas Randeepa'
 
 # import key components to make them available at the package level
-#from .sniffer import main
-#from .analysis analyze_packet
+from .sniffer import main
+from .analysis import full_analysis
