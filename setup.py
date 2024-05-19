@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='packetsniffer',
+    name='packetSniffer',
     version='1.0',
     author='Yasas',
     author_email='yasskt@gmail.com',
@@ -9,7 +9,7 @@ setup(
     packages=find_packages(),
     entry_points={
         'console_scripts': [
-            'packetsniffer=packetsniffer.__main__:main',
+            'packetSniffer=packetSniffer.__main__:main',
         ],
     },
     install_requires=[
