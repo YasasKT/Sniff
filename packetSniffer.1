@@ -1,0 +1,25 @@
+.TH PACKETSNIFFER 1 "May 2024" "version 1.0"
+.SH NAME
+packetsniffer \- A simple packet sniffer tool
+.SH SYNOPSIS
+.B packetsniffer
+.RI [ options ]
+.SH DESCRIPTION
+.B packetsniffer
+is a command-line tool for capturing and analyzing network packets.
+.SH OPTIONS
+.TP
+.BR \-i ", " \-\-interface
+Specify the network interface to capture packets on.
+.TP
+.BR \-c ", " \-\-count
+Number of packets to capture (0 to unlimited).
+.TP
+.BR \-f ", " \-\-filter
+BPF filter to apply.
+.SH EXAMPLES
+.TP
+Capture 10 TCP packets on interface eth0:
+.B packetsniffer -i eth0 -c 10 -f "tcp"
+.SH AUTHOR
+Written by Yasas Randeepa.
